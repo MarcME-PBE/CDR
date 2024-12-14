@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEMESIS UPC</title>
+    <link rel="icon" href="FOTOS/Logo-Nemesis.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!--Foto del campus-->
+    <div id="campus-photo" class="campus-foto">
+        <img class="campus-nord" src="FOTOS/campus-nord.jpg" alt="Campus Nord">
+    </div>
+    <!-- Login Container -->
+    <div id="login-container" class="centered">
+        <img class="logo_upc" src="FOTOS/logo_upc.png" alt="Logo UPC">
+        <form id="login-form">
+            <input class="username" placeholder="Usuari" type="text" id="username" name="username" autocomplete="username" required>
+            <input class="pssw" placeholder="Contrasenya" type="password" id="password" name="password" autocomplete="current-password" required>
+            <button class="login-button" type="submit">Entra</button>
+        </form>
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <div id="dashboard-container" class="hidden">
+        <header class="dashboard-header">
+            <img class="logo_upc-small" src="FOTOS/Logo-sense-fons.png" alt="Logo NEMESIS">
+            <p id="welcome-message">Welcome, <span id="user-name"></span></p>
+            <button id="logout-button" class="logout-button">Logout</button>
+        </header>
+
+        <!-- Main Content -->
+        <div id="main-content">
+            <div id="search-section">
+                <div class="dropdown">
+                    <select id="table-selector">
+                        <option value="">Select Table</option>
+                        <option value="marks">Marks</option>
+                        <option value="tasks">Tasks</option>
+                        <option value="timetables">Timetables</option>
+                    </select>
+                </div>
+                <input type="text" id="query" placeholder="Enter your query">
+                <button id="search-button">Send</button>
+            </div>
+
+            <div id="results-container"></div>
+        </div>
+    </div>
+
+    <script src="JS/main.js"></script>
+</body>
+</html>
