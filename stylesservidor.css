@@ -1,0 +1,193 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    display: flex;
+    justify-content: right;
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.centered {
+    text-align: center;
+    background: white;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#campus-photo {
+    background-image: url('FOTOS/campus-nord.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 100vh; 
+    width: 100%; 
+    display: flex; 
+}
+
+.logo_upc{
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.login-button{
+    border-radius: 50px;
+    background-color: #0270d7;
+    width: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+
+.campus-foto{
+    display: grid;
+    width:auto;
+    position: relative;
+}
+
+.campus-foto.hidden {
+    visibility: hidden;
+    display: none;
+    position: static;
+}
+
+.username,
+.pssw {
+    outline: none; 
+}
+
+.hidden {
+    display: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0055aa;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004499;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0270d7;
+    color: white;
+}
+
+.dashboard-header .logo_upc-small {
+    width: 100px; 
+    height: auto; 
+    z-index: 10; 
+    visibility: visible; 
+}
+
+#welcome-message {
+    font-size: 18px;
+}
+
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #ff1a1a;
+}
+
+#main-content {
+    padding: 20px;
+    text-align: center;
+}
+
+#search-section {
+    margin-bottom: 20px;
+}
+
+#table-selector, #query, #search-button {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#search-button {
+    background-color: #0055aa;
+    color: white;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #004499;
+}
+
+#error-message {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+#results-container {
+    margin-top: 20px;
+}
+
+#dashboard-container {
+    text-align: left;
+    width: 100%;
+    overflow: scroll;
+}
+
+#results-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
+table {
+    border-collapse: collapse; 
+    width: 80%; 
+    margin: 20px 0; 
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f4f4f4;
+}
